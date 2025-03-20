@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Haven of Flavors</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="C:\Users\chand\Downloads\WEB\MINIPROJECT\index.html">
+                    <img src="logo.png" alt="Haven of Flavors Logo">
+                    <span class="restaurant-name">HAVEN OF FLAVORS</span>
+                </a>
+           </div>
+            <ul class="nav-links">
+                <li><a href="C:\Users\chand\Downloads\WEB\MINIPROJECT\index.html">Home</a></li>
+                <li><a href="C:\Users\chand\Downloads\WEB\MINIPROJECT\about.html">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="menu-section">
+  <h2>OUR MENU</h2>
+  <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for dishes..." onkeyup="filterDishes()">
+  </div>
+  <h2>Veg Dish</h2>
+  <div class="menu-container" id="menuContainer">
+
+      <div class="dish" data-name="North Indian Thali">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish5.jpg" alt="North Indian Thali">
+          <div class="dish-details">
+              <h3>North Indian Thali</h3>
+              <p>₹350</p>
+              <button onclick="addToCart('North Indian Thali', 350)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="South Indian Thali">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish1.jpg" alt="South Indian Thali">
+          <div class="dish-details">
+              <h3>South Indian Thali</h3>
+              <p>₹450</p>
+              <button onclick="addToCart('South Indian Thali', 450)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Malai kofta and Butter naan">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish3.jpg" alt="Malai kofta and Butter naan">
+          <div class="dish-details">
+              <h3>Malai kofta and Butter naan</h3>
+              <p>₹190</p>
+              <button onclick="addToCart('Malai kofta and Butter naan', 190)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Paneer Tikka">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish7.jpg" alt="Paneer Tikka">
+          <div class="dish-details">
+              <h3>Paneer Tikka</h3>
+              <p>₹250</p>
+              <button onclick="addToCart('Paneer Tikka', 250)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Masala Dosa">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish3.jpg" alt="Masala Dosa">
+          <div class="dish-details">
+              <h3>Masala Dosa</h3>
+              <p>₹150</p>
+              <button onclick="addToCart('Masala Dosa', 150)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Rolls">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish2.jpg" alt="Rolls">
+          <div class="dish-details">
+              <h3>Rolls</h3>
+              <p>₹100</p>
+              <button onclick="addToCart('Rolls', 100)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Veg Noodles">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish6.jpg" alt="Veg Noodles">
+          <div class="dish-details">
+              <h3>Veg Noodles</h3>
+              <p>₹150</p>
+              <button onclick="addToCart('Veg Noodles', 150)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Samosa Chat">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\chat1.jpg" alt="Samosa Chat">
+          <div class="dish-details">
+              <h3>Samosa Chat</h3>
+              <p>₹90</p>
+              <button onclick="addToCart('Samosa Chat', 90)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Momos">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\momos.jpg" alt="Momos">
+          <div class="dish-details">
+              <h3>Momos</h3>
+              <p>₹110</p>
+              <button onclick="addToCart('Momos', 110)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="ladoos">
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\sweet2.jpg" alt="ladoos">
+          <div class="dish-details">
+              <h3>ladoos</h3>
+              <p>₹150</p>
+              <button onclick="addToCart('ladoos', 150)" class="btn">Add to Cart</button>
+          </div>
+      </div>   
+  </div>
+<h2>Non-Veg Dish</h2>
+  <div class="menu-container" id="menuContainer">           
+      <div class="dish" data-name="Butter Chicken" >
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish10.jpg" alt="Butter Chicken">
+          <div class="dish-details">
+              <h3>Butter Chicken</h3>
+              <p>₹300</p>
+              <button onclick="addToCart('Butter Chicken', 300)" class="btn">Add to Cart</button>
+          </div>
+      </div>
+      <div class="dish" data-name="Chicken Biryani" >
+          <img src="C:\Users\chand\Downloads\WEB\MINIPROJECT\images\dish4.jpg" alt="Chicken Biryani">
+          <div class="dish-details">
+              <h3>Chicken Biryani</h3>
+              <p>₹450</p>
+              <button onclick="addToCart('Chicken Biryani', 450)" class="btn">Add to Cart</button>
+          </div>
+      </div>    
+  </div> 
+</section>
+<!-- Cart Section -->
+<section class="cart-section">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: ₹<span id="totalAmount">0</span></h3>
+  <button id="clearCart" onclick="clearCart()" class="btn">Clear Cart</button>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+          <div class="footer-nav">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div> 
+          <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>Email: <a href="mailto:info@havenofflavors.com">info@havenofflavors.com</a></p>
+              <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+              <p>Address: 123 , bangalore</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Haven of Flavors. All Rights Reserved.</p>
+      </div>
+  </footer>
+
+    <script>
+      let cart = [];
+let totalAmount = 0;
+
+function addToCart(dishName, price) {
+    cart.push({ name: dishName, price: price });
+    totalAmount += price;
+    updateCart();
+}
+
+function updateCart() {
+    const cartItems = document.getElementById('cartItems');
+    const totalAmountDisplay = document.getElementById('totalAmount');
+    
+    cartItems.innerHTML = '';
+    cart.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - ₹${item.price}`;
+        cartItems.appendChild(listItem);
+    });
+    totalAmountDisplay.textContent = totalAmount;
+}
+
+function filterDishes() {
+    const searchInput = document.getElementById('searchBar').value.toLowerCase();
+    const dishes = document.querySelectorAll('.dish');
+    
+    dishes.forEach(dish => {
+        const dishName = dish.getAttribute('data-name').toLowerCase();
+        if (dishName.includes(searchInput)) {
+            dish.style.display = 'block';
+        } else {
+            dish.style.display = 'none';
+        }
+    });
+}
+
+// Clear Cart Functionality
+function clearCart() {
+  totalAmount=0;
+    cart = [];
+    updateCart();
+}
+    </script>
+</body>
+</html>
